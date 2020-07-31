@@ -1,0 +1,47 @@
+syntax = "proto3";
+package services;
+import "models.proto"; 
+import "google/api/annotations.proto";
+
+
+enum ProdAreas {
+    A=0;
+    B=1;
+    C=2;
+}
+
+message ProdRequest {
+    int32 Id = 1;
+    ProdAreas area=2;
+}
+
+message ProdRespon {
+    int32 Stock = 1;
+}
+
+message QuerySize {
+    int32 Size = 1;
+}
+
+message ProdResponList {
+    repeated ProdRespon Stocks = 1;
+}
+
+service ProdService {
+    //获取商品id库存
+    rpc GetProdStock(ProdRequest) returns (ProdRespon) {
+        option (google.api.http) = {
+            get: "/v1/prod/{Id}"
+        };
+    }
+
+    //获取多个商品库存
+    rpc GetProdStocks(QuerySize) returns (ProdResponList) {
+        option (google.api.http) = {
+            get: "/v1/prods/{Size}"
+        };
+    }
+
+    //获取商品详情
+    rpc GetProdInfo(ProdRequest) returns (ProdModel) {}
+}
