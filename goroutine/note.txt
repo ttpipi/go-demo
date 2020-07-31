@@ -1,0 +1,10 @@
+goroutine:
+1.非抢占式
+2.go run -race
+
+调度器可能切换的点:
+    IO, select
+    channel
+    metux
+    Gosched
+    函数调用(有时)

@@ -1,0 +1,2 @@
+[test1]2019/12/21 17:02:25 main.go:19: log.SetFlags
+[test1]2019/12/21 17:09:55 main.go:19: log.SetFlags
