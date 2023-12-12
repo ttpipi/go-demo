@@ -2,9 +2,9 @@ package main
 
 import (
 	"bufio"
+	"demo/example/cgss/cg"
+	"demo/example/cgss/ipc"
 	"fmt"
-	"golang/example/cgss/cg"
-	"golang/example/cgss/ipc"
 	"os"
 	"strconv"
 	"strings"

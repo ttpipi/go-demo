@@ -1,9 +1,9 @@
 package cg
 
 import (
+	"demo/example/cgss/ipc"
 	"encoding/json"
 	"errors"
-	"golang/example/cgss/ipc"
 )
 
 type CenterClient struct {
