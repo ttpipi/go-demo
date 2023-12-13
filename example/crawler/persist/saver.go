@@ -1,8 +1,8 @@
 package persist
 
 import (
-	"crawler/comm"
-	"crawler/myrpc"
+	"demo/example/crawler/comm"
+	"demo/example/crawler/myrpc"
 	"fmt"
 	"log"
 )

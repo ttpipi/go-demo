@@ -7,6 +7,9 @@ import (
 	"os"
 )
 
+/*
+动态切换日志等级
+*/
 func main() {
 	var lvl slog.LevelVar
 	lvl.Set(slog.LevelDebug)

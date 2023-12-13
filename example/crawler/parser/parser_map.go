@@ -1,8 +1,8 @@
 package parser
 
 import (
-	"crawler/comm"
-	"crawler/parser/zhenai"
+	"demo/example/crawler/comm"
+	"demo/example/crawler/parser/zhenai"
 )
 
 var ParserMap = map[string]func([]byte, string) comm.Result{

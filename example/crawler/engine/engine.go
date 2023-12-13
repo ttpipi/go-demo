@@ -1,10 +1,10 @@
 package engine
 
 import (
-	"crawler/comm"
-	"crawler/config"
-	"crawler/scheduler"
-	"crawler/worker"
+	"demo/example/crawler/comm"
+	"demo/example/crawler/config"
+	"demo/example/crawler/scheduler"
+	"demo/example/crawler/worker"
 	"net/rpc"
 )
 

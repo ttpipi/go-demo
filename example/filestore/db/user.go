@@ -1,8 +1,8 @@
 package db
 
 import (
+	mydb "demo/example/filestore/db/mysql"
 	"fmt"
-	mydb "go_filestore/db/mysql"
 )
 
 type User struct {

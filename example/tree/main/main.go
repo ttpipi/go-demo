@@ -1,7 +1,7 @@
 package main
 
 import (
-	"../tree"
+	"demo/example/tree/tree"
 	"fmt"
 )
 

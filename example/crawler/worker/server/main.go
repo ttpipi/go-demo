@@ -1,7 +1,7 @@
 package main
 
 import (
-	"crawler/myrpc"
+	"demo/example/crawler/myrpc"
 	"flag"
 	"fmt"
 	"log"

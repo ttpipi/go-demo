@@ -3,12 +3,16 @@ module demo
 go 1.14
 
 require (
-	github.com/golang/protobuf v1.4.1
+	github.com/garyburd/redigo v1.6.4
+	github.com/go-sql-driver/mysql v1.7.1
+	github.com/golang/protobuf v1.4.3
 	github.com/grpc-ecosystem/grpc-gateway v1.14.5
+	github.com/json-iterator/go v1.1.6
+	github.com/olivere/elastic/v7 v7.0.32
+	github.com/pkg/errors v0.9.1
 	github.com/prometheus/common v0.9.1
-	golang.org/x/net v0.0.0-20200226121028-0de0cce0169b // indirect
-	golang.org/x/sys v0.0.0-20200511232937-7e40ca221e25 // indirect
-	google.golang.org/genproto v0.0.0-20190927181202-20e1ac93f88c
-	google.golang.org/grpc v1.29.1
-	google.golang.org/protobuf v1.22.0
+	golang.org/x/sync v0.0.0-20190423024810-112230192c58
+	google.golang.org/genproto v0.0.0-20200526211855-cb27e3aa2013
+	google.golang.org/grpc v1.33.2
+	google.golang.org/protobuf v1.25.0
 )

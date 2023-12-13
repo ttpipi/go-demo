@@ -1,8 +1,6 @@
 package scheduler
 
-import (
-	"crawler/comm"
-)
+import "demo/example/crawler/comm"
 
 type Scheduler struct {
 	reqChan    chan comm.Request

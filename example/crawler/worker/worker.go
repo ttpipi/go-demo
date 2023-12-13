@@ -1,8 +1,8 @@
 package worker
 
 import (
-	"crawler/comm"
-	"crawler/scheduler"
+	"demo/example/crawler/comm"
+	"demo/example/crawler/scheduler"
 	"log"
 	"net/rpc"
 )

@@ -1,10 +1,10 @@
 package main
 
 import (
-	"crawler/comm"
-	"crawler/engine"
-	"crawler/myrpc"
-	"crawler/persist"
+	"demo/example/crawler/comm"
+	"demo/example/crawler/engine"
+	"demo/example/crawler/myrpc"
+	"demo/example/crawler/persist"
 	"errors"
 	"flag"
 	"fmt"

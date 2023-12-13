@@ -1,9 +1,9 @@
 package main
 
 import (
-	"golang/example/sorter/algorithms/bubblesort"
-	"golang/example/sorter/algorithms/qsort"
 	"bufio"
+	"demo/example/sorter/algorithms/bubblesort"
+	"demo/example/sorter/algorithms/qsort"
 	"flag"
 	"fmt"
 	"io"

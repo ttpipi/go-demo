@@ -1,11 +1,11 @@
 package handler
 
 import (
+	dblayer "demo/example/filestore/db"
+	meta "demo/example/filestore/meta"
+	"demo/example/filestore/util"
 	"encoding/json"
 	"fmt"
-	dblayer "go_filestore/db"
-	meta "go_filestore/meta"
-	"go_filestore/util"
 	"io"
 	"io/ioutil"
 	"net/http"

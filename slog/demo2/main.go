@@ -8,6 +8,10 @@ import (
 	"time"
 )
 
+/*
+自定义后端实现
+*/
+
 func main() {
 	var ch = make(chan []byte, 100)
 	arrts := []slog.Attr{

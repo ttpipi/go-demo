@@ -5,11 +5,12 @@ import (
 	"bytes"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"net/http"
 	"net/url"
 	"os"
 	"strconv"
+
+	jsoniter "github.com/json-iterator/go"
 )
 
 func multipartUpload(filename string, targetURL string, chunkSize int) error {
@@ -46,7 +47,7 @@ func multipartUpload(filename string, targetURL string, chunkSize int) error {
 				fmt.Println(err)
 			}
 
-			body, er := ioutil.ReadAll(resp.Body)
+			body, er := io.ReadAll(resp.Body)
 			fmt.Printf("%+v %+v\n", string(body), er)
 			resp.Body.Close()
 
@@ -94,15 +95,15 @@ func main() {
 	}
 
 	defer resp.Body.Close()
-	body, err := ioutil.ReadAll(resp.Body)
+	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		fmt.Println(err.Error())
 		os.Exit(-1)
 	}
 
 	// 2. 得到uploadID以及服务端指定的分块大小chunkSize
-	uploadID := jsonit.Get(body, "data").Get("UploadID").ToString()
-	chunkSize := jsonit.Get(body, "data").Get("ChunkSize").ToInt()
+	uploadID := jsoniter.Get(body, "data").Get("UploadID").ToString()
+	chunkSize := jsoniter.Get(body, "data").Get("ChunkSize").ToInt()
 	fmt.Printf("uploadid: %s  chunksize: %d\n", uploadID, chunkSize)
 
 	// 3. 请求分块上传接口
@@ -129,7 +130,7 @@ func main() {
 	}
 
 	defer resp.Body.Close()
-	body, err = ioutil.ReadAll(resp.Body)
+	body, err = io.ReadAll(resp.Body)
 	if err != nil {
 		fmt.Println(err.Error())
 		os.Exit(-1)

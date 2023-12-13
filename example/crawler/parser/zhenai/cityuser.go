@@ -1,7 +1,7 @@
 package zhenai
 
 import (
-	"crawler/comm"
+	"demo/example/crawler/comm"
 	"regexp"
 )
 

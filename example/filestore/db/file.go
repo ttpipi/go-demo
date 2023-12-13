@@ -2,8 +2,8 @@ package db
 
 import (
 	"database/sql"
+	mydb "demo/example/filestore/db/mysql"
 	"fmt"
-	mydb "go_filestore/db/mysql"
 )
 
 func OnFileUploadFinished(filehash, filename string, filesize int64, fileaddr string) bool {

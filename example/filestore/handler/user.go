@@ -1,9 +1,9 @@
 package handler
 
 import (
+	dblayer "demo/example/filestore/db"
+	"demo/example/filestore/util"
 	"fmt"
-	dblayer "go_filestore/db"
-	"go_filestore/util"
 	"net/http"
 	"time"
 )
@@ -113,7 +113,7 @@ func UserInfoHandler(w http.ResponseWriter, r *http.Request) {
 	w.Write(resp.JSONBytes())
 }
 
-//todo: token的生成方式
+// todo: token的生成方式
 func GenToken(username string) string {
 	// 40位字符:md5(username+timestamp+token_salt)+timestamp[:8]
 	ts := fmt.Sprintf("%x", time.Now().Unix())

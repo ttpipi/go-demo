@@ -2,8 +2,8 @@ package main
 
 import (
 	"bufio"
+	"demo/example/pipeline/pipeline"
 	"fmt"
-	"golang/example/pipeline/pipeline"
 	"os"
 )
 

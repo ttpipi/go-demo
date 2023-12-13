@@ -2,9 +2,9 @@ package main
 
 import (
 	"bufio"
+	"demo/example/musicplayer/musicmgr"
+	"demo/example/musicplayer/play"
 	"fmt"
-	"golang/example/musicplayer/musicmgr"
-	"golang/example/musicplayer/play"
 	"os"
 	"strconv"
 	"strings"

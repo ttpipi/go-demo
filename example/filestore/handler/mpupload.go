@@ -1,9 +1,8 @@
 package handler
 
 import (
+	"demo/example/filestore/util"
 	"fmt"
-	"github.com/garyburd/redigo/redis"
-	"go_filestore/util"
 	"math"
 	"net/http"
 	"os"
@@ -12,8 +11,10 @@ import (
 	"strings"
 	"time"
 
-	rPool "go_filestore/cache/redis"
-	dblayer "go_filestore/db"
+	"github.com/garyburd/redigo/redis"
+
+	rPool "demo/example/filestore/cache/redis"
+	dblayer "demo/example/filestore/db"
 )
 
 type MultipartUploadInfo struct {

@@ -1,8 +1,8 @@
 package myrpc
 
 import (
-	"crawler/comm"
-	"crawler/parser"
+	"demo/example/crawler/comm"
+	"demo/example/crawler/parser"
 	"net/http"
 	"net/http/httputil"
 )

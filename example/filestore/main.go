@@ -1,8 +1,9 @@
 package main
 
 import (
+	"demo/example/filestore/handler"
 	"fmt"
-	"go_filestore/handler"
+
 	"net/http"
 )
 

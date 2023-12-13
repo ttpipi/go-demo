@@ -1,6 +1,6 @@
 package meta
 
-import mydb "go_filestore/db"
+import mydb "demo/example/filestore/db"
 
 type FileMeta struct {
 	FileSha1 string

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"crawler/config"
-	"crawler/myrpc"
+	"demo/example/crawler/config"
+	"demo/example/crawler/myrpc"
 	"flag"
 	"fmt"
 	"log"

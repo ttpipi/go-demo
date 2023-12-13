@@ -2,7 +2,7 @@ package myrpc
 
 import (
 	"context"
-	"crawler/comm"
+	"demo/example/crawler/comm"
 
 	"github.com/olivere/elastic/v7"
 )
