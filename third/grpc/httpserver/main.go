@@ -2,8 +2,8 @@ package main
 
 import (
 	"context"
-	"demo/grpc/helper"
-	"demo/grpc/services"
+	"grpc/helper"
+	"grpc/services"
 	"log"
 	"net/http"
 

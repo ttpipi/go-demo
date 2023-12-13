@@ -2,9 +2,10 @@ package main
 
 import (
 	"context"
-	"demo/grpc/helper"
-	. "demo/grpc/services"
 	"fmt"
+	"grpc/helper"
+
+	. "grpc/services"
 	"io"
 	"log"
 

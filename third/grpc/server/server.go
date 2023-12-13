@@ -1,8 +1,8 @@
 package main
 
 import (
-	"demo/grpc/helper"
-	"demo/grpc/services"
+	"grpc/helper"
+	"grpc/services"
 	"net"
 
 	"github.com/prometheus/common/log"
