@@ -5,7 +5,8 @@ import (
 	"grpc/services"
 	"net"
 
-	"github.com/prometheus/common/log"
+	"log"
+
 	"google.golang.org/grpc"
 )
 

@@ -7,7 +7,7 @@ import (
 
 func main() {
 	//构造
-	root := tree.Node{1, nil, nil}
+	root := tree.Node{Value: 1, LeftNode: nil, RightNode: nil}
 	root.LeftNode = &tree.Node{Value: 2}
 	root.RightNode = &tree.Node{Value: 3, LeftNode: nil, RightNode: nil}
 	root.LeftNode.RightNode = tree.CreateNode(4)
